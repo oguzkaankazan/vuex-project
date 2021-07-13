@@ -5,11 +5,9 @@
 </template>
 <script>
   export default {
-    // props : ["counter"],
-    computed : {
+    computed:{
       counter(){
-        // return this.$store.state.counter * 2;
-        return this.$store.getters.getDoubleCounter;
+        return this.$store.state.counter;
       }
     }
   }
